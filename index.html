@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordly - Interactive Dictionary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Wordly</h1>
+            <p>Discover meanings, explore synonyms, save your favorites</p>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                dark
+            </button>
+        </header>
+
+        <div class="search-section">
+            <form class="search-form" id="searchForm">
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Enter a word to search..."
+                    aria-label="Search for a word"
+                    required
+                />
+                <button type="submit" id="searchBtn">Search</button>
+            </form>
+        </div>
+
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p style="margin-top: 16px; color: #667eea;">Searching...</p>
+        </div>
+
+        <div class="error-message" id="errorMessage"></div>
+
+        <div class="results-section" id="resultsSection">
+            <div class="word-header">
+                <div class="word-title" id="wordTitle"></div>
+                <div class="phonetic" id="phonetic"></div>
+                <div class="audio-controls" id="audioControls"></div>
+                <div id="partOfSpeech"></div>
+            </div>
+
+            <div id="definitionsContainer"></div>
+
+            <div id="synonymsContainer"></div>
+
+            <div id="antonymsContainer"></div>
+
+            <div class="source" id="source"></div>
+
+            <button class="save-btn" id="saveBtn" aria-label="Save this word to favorites">
+                 Save to Favorites
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
