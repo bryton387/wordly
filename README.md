@@ -45,7 +45,7 @@ The DOM is updated dynamically to display results
 Errors are handled and shown to the user if needed
  Testing
 
-The application has been tested for:
+
 
 
 
