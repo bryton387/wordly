@@ -1,4 +1,4 @@
-// ===== SELECT ELEMENTS =====
+ //SELECT ELEMENTS 
 const form = document.getElementById("searchForm");
 const input = document.getElementById("searchInput");
 const searchBtn = document.getElementById("searchBtn");
@@ -15,7 +15,7 @@ const themeToggle = document.getElementById("themeToggle");
 const saveBtn = document.getElementById("saveBtn");
 
 
-// ===== 1. START (USER ACTION) =====
+//1. START (USER ACTION) 
 form.addEventListener("submit", function(e) {
     e.preventDefault();
 
@@ -26,7 +26,7 @@ form.addEventListener("submit", function(e) {
 });
 
 
-// ===== 2. FETCH DATA =====
+/FETCH DATA 
 function fetchWord(word) {
     // show loading
     loading.style.display = "block";
@@ -52,7 +52,7 @@ function fetchWord(word) {
 }
 
 
-// ===== 3. DISPLAY DATA =====
+//3. DISPLAY DATA
 function displayData(data) {
     resultsSection.style.display = "block";
 
@@ -85,7 +85,7 @@ function displayData(data) {
 }
 
 
-// ===== DARK MODE =====
+// DARK MODE 
 themeToggle.addEventListener("click", function() {
     document.body.classList.toggle("dark-mode");
 
@@ -97,7 +97,7 @@ themeToggle.addEventListener("click", function() {
 });
 
 
-// ===== SAVE TO FAVORITES =====
+//  SAVE TO FAVORITES 
 saveBtn.addEventListener("click", function() {
     const word = wordTitle.textContent;
     if (!word) return;
