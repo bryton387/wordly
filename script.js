@@ -26,7 +26,7 @@ form.addEventListener("submit", function(e) {
 });
 
 
-/FETCH DATA 
+//FETCH DATA 
 function fetchWord(word) {
     // show loading
     loading.style.display = "block";
